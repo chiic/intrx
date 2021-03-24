@@ -10,19 +10,19 @@ type resType = {
 }
 
 interface interceptorHandler {
-    reqInterce(callback: (config: ars) => ars);
-    resInterce(obj: resType);
+    reqInterceptor(callback: (config: ars) => ars);
+    resInterceptor(obj: resType);
 }
 
 export class Interceptor implements interceptorHandler {
     private configList = [];
     private resList = [];
     private errList = [];
-    reqInterce(configCall) {
+    reqInterceptor(configCall) {
         this.configList.unshift(configCall);
     }
 
-    resInterce(obj) {
+    resInterceptor(obj) {
         this.resList.push(obj.next);
         this.errList.push(obj.err);
     }

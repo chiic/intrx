@@ -19,11 +19,11 @@ import intrx from "../../src";
 //     res => console.log(res)
 // )
 
-intrx.interceptors.reqInterce(function (config) {
+intrx.interceptors.reqInterceptor(function (config) {
     config.headers['XREQ'] = 'V';
     return config;
 })
-intrx.interceptors.resInterce({
+intrx.interceptors.resInterceptor({
     next: (data) => {
         data.v = '3123';
         return data;
