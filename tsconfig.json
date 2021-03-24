@@ -19,7 +19,6 @@
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts",
-    "server"
+    "**/*.spec.ts"
   ]
 }
