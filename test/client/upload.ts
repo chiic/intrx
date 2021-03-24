@@ -1,4 +1,4 @@
-import intrx from "../../src";
+import intrx from 'intrx';
 
 const inputFile = document.createElement('input');
 

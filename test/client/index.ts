@@ -1,4 +1,4 @@
-import intrx from "../../src";
+import intrx from 'intrx';
 // import './upload';
 // power by intrx & jsonplaceholder
 

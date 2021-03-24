@@ -17,8 +17,5 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json']
-    },
-    experiments: {
-        outputModule: true
     }
 }

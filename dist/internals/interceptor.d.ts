@@ -6,15 +6,15 @@ declare type resType = {
     err: (err: any) => any;
 };
 interface interceptorHandler {
-    reqInterce(callback: (config: ars) => ars): any;
-    resInterce(obj: resType): any;
+    reqInterceptor(callback: (config: ars) => ars): any;
+    resInterceptor(obj: resType): any;
 }
 export declare class Interceptor implements interceptorHandler {
     private configList;
     private resList;
     private errList;
-    reqInterce(configCall: any): void;
-    resInterce(obj: any): void;
+    reqInterceptor(configCall: any): void;
+    resInterceptor(obj: any): void;
     getConfig(): any[];
     getResList(): any[];
     getErrorList(): void;
