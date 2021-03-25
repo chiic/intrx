@@ -1,4 +1,4 @@
-import {Observable, of} from "rxjs";
+import { Observable, of } from 'rxjs';
 
 type ars = {
     [index: string]: string | number;
